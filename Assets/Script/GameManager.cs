@@ -96,7 +96,7 @@ public class GameManager : MonoBehaviour
 
             if (rainy)
             {
-                flowers.GrowSpeed = 10;
+                flowers.GrowSpeed /= 2;
                 rainyDay.SunnyCat();
                 rainy = false;
             }

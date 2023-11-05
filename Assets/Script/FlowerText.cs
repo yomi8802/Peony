@@ -28,7 +28,7 @@ public class FlowerText : MonoBehaviour
                 flowers.Flowering(true);
                 frame = Time.frameCount;
             }
-            else if(frame + 10f >= Time.frameCount)
+            else if(frame + 15f >= Time.frameCount)
             {
                 flowers.Flowering(false);
             }

@@ -8,10 +8,9 @@ public class Flowers : MonoBehaviour
     public int Flower = 1; //開花数
     List<int> Condition = new();
 
-    public int GrowSpeed = 15; //成長速度
-    public int AddGrowSpeed = 10; //水あげ
+    public int GrowSpeed = 10; //成長速度
+    public int AddGrowSpeed = 5; //水あげ
     public int Obstacle = 8; //障害
-    public int RemoveObstacle = 8; //草取り
     public int seed = 5; //種蒔き
 
     //牡丹プレハブ
@@ -84,12 +83,6 @@ public class Flowers : MonoBehaviour
 
         //Conditionがマイナスで枯れる
         Condition.RemoveAll(num => num < 0);
-
-        for (int i = 0; i < Condition.Count; i++)
-        {
-            Debug.Log(Condition[i]);
-        }
-        Debug.Log(Flower);
     }
 
     //各アクションのエフェクト表示
